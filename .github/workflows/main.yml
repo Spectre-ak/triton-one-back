@@ -6,9 +6,9 @@ name: triton-one CI backend
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ triton-one-backend ]
+    branches: [ main ]
   pull_request:
-    branches: [ triton-one-backend ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
