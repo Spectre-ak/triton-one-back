@@ -37,5 +37,5 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
-            docker build ./triton-one -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/triton-one-backend:0.1
+            docker build ./ -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/triton-one-backend:0.1
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/triton-one-backend:0.1
