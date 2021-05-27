@@ -79,5 +79,9 @@ public class HubbleAPI {
 		
 	}
 	
+	@GetMapping("/")
+	public String home(){
+		return "App working";
+	}
 	
 }
